@@ -28,7 +28,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'October CMS',
+    'name' => 'Technobots',
 
     /*
     |--------------------------------------------------------------------------
@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'url' => 'http://192.168.2.10/install-master/',
+    'url' => 'http://localhost/technobots/',
 
     /*
     |--------------------------------------------------------------------------
@@ -81,7 +81,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'pt-br',
 
     /*
     |--------------------------------------------------------------------------
@@ -107,7 +107,7 @@ return [
     |
     */
 
-    'key' => '9hP0MZN72zjYcwDzJALJaLwOhipqvtf4',
+    'key' => 'IbWK6858ghOxnWeObpZtJKnnLtSOpFAL',
 
     'cipher' => 'AES-256-CBC',
 

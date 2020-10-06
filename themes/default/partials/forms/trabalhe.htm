@@ -1,0 +1,86 @@
+{{ form_ajax('contato::onSubmit', { update: { 'forms/trabalhe-conosco': '#trabalhe' }, enctype: 'multipart/form-data', files: true }) }}
+
+<input type="hidden" name="area" value="Trabalhe Conosco">
+
+<div class="row">
+	<div class="col-lg-12 col-12">
+		<div class="form-group">
+			<label for="nome">NOME</label>
+			<input type="text" name="nome" class="form-custom {% if contato.errors.first('nome') %}validate{% endif %}" id="nome" value="{{ post('nome') }}">
+			<span class="error">{{contato.errors.first('nome')}}</span>
+		</div>	
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-lg-12 col-12">
+		<div class="form-group">
+			<label for="email">E-MAIL</label>
+			<input type="email" name="email" class="form-custom {% if contato.errors.first('email') %}validate{% endif %}" id="email" value="{{ post('email') }}">
+			<span class="error">{{contato.errors.first('email')}}</span>
+		</div>	
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-lg-12 col-12">
+		<div class="form-group">
+			<label for="telefone">TELEFONE</label>
+			<input type="text" name="telefone" class="form-custom {% if contato.errors.first('telefone') %}validate{% endif %}" id="telefone" value="{{ post('telefone') }}">
+			<span class="error">{{contato.errors.first('telefone')}}</span>
+		</div>	
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-lg-12 col-12">
+		<div class="form-group">
+			<label for="mensagem">MENSAGEM</label>
+			<textarea name="mensagem" id="mensagem" class="form-custom {% if contato.errors.first('mensagem') %}validate{% endif %}">{{ post('mensagem') }}</textarea>
+			<span class="error">{{contato.errors.first('mensagem')}}</span>
+		</div>	
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-lg-12 col-12">
+		<div class="form-group">
+			<label for="anexo">ANEXO</label>
+			<input type="file" name="anexo" class="form-custom {% if contato.errors.first('anexo') %}validate{% endif %}" id="anexo" >
+		</div>	
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-lg-12 col-12 text-right">
+		
+		{% set mc = contato.getConfig() %}
+		{% if mc.site_key and mc.secret_key %}
+			<div class="g-recaptcha" data-sitekey="{{ mc.site_key }}"></div>
+			<span class="error">{{contato.errors.first('g-recaptcha-response')}}</span>
+		{% endif %}
+
+		<button type="submit" class="btn btn-red"><div class="span">ENVIAR</div></button>
+	</div>
+</div>
+
+{{ form_close() }}
+
+<div class="row">
+	<div class="col-lg-12 col-12">
+		{% if contato.success %}
+			<div class="alert alert-success mt-2">
+				<p class="font-regular">Mensagem enviada com sucesso!</p>
+				<p class="font-regular">Agradecemos o seu contato. Aguarde em breve responderemos.</p>
+			</div>
+
+			{% else %}
+
+			{% if contato.errors|length > 0 %}
+				<div class="alert alert-danger">
+					<p>Ocorreram erros de validação. Verifique o formulário</p>
+				</div>
+			{% endif %}
+		{% endif %}
+	</div>
+</div>

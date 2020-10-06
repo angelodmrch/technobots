@@ -1,0 +1,121 @@
+1601991750a:1:{s:17:"layout/header.htm";a:5:{s:8:"fileName";s:17:"layout/header.htm";s:7:"content";s:1981:"<div id="primary-navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="logo"><a href="{{ url('/') }}"><img src="{{ asset('themes/default/assets/images/logo.png') }}" alt="LOGO" width="143px"></a></div>
+			</div>
+
+			<div class="col-lg-9 text-left">
+				
+				<div class="row">
+					<div class="col-lg-6 busca">
+						{{ form_open({ request: 'produto::onSubmit' }) }}
+							<input type="text" name="query" placeholder="BUSCA"><button type="submit" class="btn btn-gray"><i class="fas fa-search"></i></button>
+						{{ form_close() }}
+					</div>
+
+					<div class="col-lg-6 social text-right"> 
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-facebook-square"></i></a>
+						<a href="#"><i class="fas fa-shopping-cart"></i></a>
+					</div>
+				</div>
+
+				<nav>
+					{% partial "layout/menu" %}
+				</nav>
+			</div>
+		</div>			
+	</div>
+</div>
+
+<div id="mobile-navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-right">
+				<div class="logo"><a href="{{ url('/') }}"><img src="{{ asset('themes/default/assets/images/logo.png') }}" alt="LOGO" width="143px" style="max-width: 100%"></a></div>
+			</div>
+
+			<div class="col-12 busca">
+				{{ form_open({ request: 'produto::onSubmit' }) }}
+					<input type="text" name="query" placeholder="BUSCA"><button type="submit" class="btn btn-gray"><i class="fas fa-search"></i></button>
+				{{ form_close() }}
+			</div>
+
+			<div class="col-3 social text-left"> 
+				<a id="simple-menu" href="#sidr" style="margin: 0;"><i class="fas fa-bars"></i></a>
+			</div>
+
+			<div class="col-9 social text-right"> 
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-facebook-square"></i></a>
+				<a href="#"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+
+		</div>
+
+		<div id="sidr">
+			{% partial "layout/menu" %}
+		</div>
+	</div>
+</div>";s:5:"mtime";i:1561376724;s:6:"markup";s:1981:"<div id="primary-navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="logo"><a href="{{ url('/') }}"><img src="{{ asset('themes/default/assets/images/logo.png') }}" alt="LOGO" width="143px"></a></div>
+			</div>
+
+			<div class="col-lg-9 text-left">
+				
+				<div class="row">
+					<div class="col-lg-6 busca">
+						{{ form_open({ request: 'produto::onSubmit' }) }}
+							<input type="text" name="query" placeholder="BUSCA"><button type="submit" class="btn btn-gray"><i class="fas fa-search"></i></button>
+						{{ form_close() }}
+					</div>
+
+					<div class="col-lg-6 social text-right"> 
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-facebook-square"></i></a>
+						<a href="#"><i class="fas fa-shopping-cart"></i></a>
+					</div>
+				</div>
+
+				<nav>
+					{% partial "layout/menu" %}
+				</nav>
+			</div>
+		</div>			
+	</div>
+</div>
+
+<div id="mobile-navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-right">
+				<div class="logo"><a href="{{ url('/') }}"><img src="{{ asset('themes/default/assets/images/logo.png') }}" alt="LOGO" width="143px" style="max-width: 100%"></a></div>
+			</div>
+
+			<div class="col-12 busca">
+				{{ form_open({ request: 'produto::onSubmit' }) }}
+					<input type="text" name="query" placeholder="BUSCA"><button type="submit" class="btn btn-gray"><i class="fas fa-search"></i></button>
+				{{ form_close() }}
+			</div>
+
+			<div class="col-3 social text-left"> 
+				<a id="simple-menu" href="#sidr" style="margin: 0;"><i class="fas fa-bars"></i></a>
+			</div>
+
+			<div class="col-9 social text-right"> 
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-facebook-square"></i></a>
+				<a href="#"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+
+		</div>
+
+		<div id="sidr">
+			{% partial "layout/menu" %}
+		</div>
+	</div>
+</div>";s:4:"code";N;}}

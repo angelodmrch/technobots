@@ -1,0 +1,11 @@
+1601991750a:1:{s:15:"layout/menu.htm";a:5:{s:8:"fileName";s:15:"layout/menu.htm";s:7:"content";s:469:"<ul>
+	<li><a href="{{ url('/') }}" {% if this.page.id == "home" %}class="active"{% endif %}>Home</a></li>	
+	<li><a href="{{ url('quem-somos') }}" {% if this.page.id == "quem-somos" %}class="active"{% endif %}>Quem Somos</a></li>	
+	<li><a href="{{ url('produtos') }}" {% if this.page.id == "produtos" %}class="active"{% endif %}>Produtos</a></li>
+	<li><a href="{{ url('contato') }}" {% if this.page.id == "contato" %}class="active"{% endif %}>Contato</a></li>
+</ul>";s:5:"mtime";i:1545063334;s:6:"markup";s:469:"<ul>
+	<li><a href="{{ url('/') }}" {% if this.page.id == "home" %}class="active"{% endif %}>Home</a></li>	
+	<li><a href="{{ url('quem-somos') }}" {% if this.page.id == "quem-somos" %}class="active"{% endif %}>Quem Somos</a></li>	
+	<li><a href="{{ url('produtos') }}" {% if this.page.id == "produtos" %}class="active"{% endif %}>Produtos</a></li>
+	<li><a href="{{ url('contato') }}" {% if this.page.id == "contato" %}class="active"{% endif %}>Contato</a></li>
+</ul>";s:4:"code";N;}}

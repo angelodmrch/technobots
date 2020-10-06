@@ -1,0 +1,62 @@
+title = "Contato"
+url = "/contato"
+layout = "default"
+id = contato
+
+[contato]
+==
+<?php
+function onStart(){
+
+}
+?>
+==
+<section id="page-header">
+	<div class="container">
+		<div class="h1before"></div>
+		<h1 class="">Contato</h1>	
+	</div>
+</section>
+
+<div id="contato">	
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 pt-3 pb-3">
+
+				<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+				  	<li class="nav-item active mr-3">
+				    	<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Cliente</a>
+				  	</li>
+				  	<li class="nav-item">
+				    	<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Trabalhe Conosco</a>
+				 	</li>
+				</ul>
+
+				<div class="tab-content" id="pills-tabContent">
+				  	<div class="tab-pane active fade in show" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+				  		{% partial "forms/contato" %}
+				  	</div>
+
+				  	<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+				  		{% partial "forms/trabalhe" %}
+				  	</div>
+				</div>	
+
+			</div>
+		</div>
+
+
+
+	</div>
+</div>
+
+<div id="map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5027.280221999267!2d-48.62919183869824!3d-27.00411872350334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b66dd78fc963%3A0xb549ab44a31c5ec3!2sR.+3160%2C+484+-+Centro%2C+Balne%C3%A1rio+Cambori%C3%BA+-+SC%2C+88330-284!5e0!3m2!1spt-BR!2sbr!4v1545131663394" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+
+{% put styles %}
+	<link href="{{ ['assets/css/main.min.css']|theme }}" rel="stylesheet">
+{% endput %}
+

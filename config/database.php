@@ -56,7 +56,7 @@ return [
             'driver'     => 'mysql',
             'engine'     => 'InnoDB',
             'host'       => 'localhost',
-            'port'       => 3306,
+            'port'       => '3306',
             'database'   => 'technobots',
             'username'   => 'root',
             'password'   => '',

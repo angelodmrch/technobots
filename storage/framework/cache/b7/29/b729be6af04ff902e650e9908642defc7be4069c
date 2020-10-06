@@ -1,0 +1,45 @@
+1601991750a:1:{s:17:"layout/footer.htm";a:5:{s:8:"fileName";s:17:"layout/footer.htm";s:7:"content";s:1112:"<div id="info">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-xs-6 mb-3">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tempore modi repellendus maiores nulla cum veniam repudiandae dolorem optio debitis, provident, soluta inventore similique. Dicta nam incidunt deleniti, consectetur porro!
+			</div>
+
+			<div class="col-md-3 col-xs-6 mb-3">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tempore modi repellendus maiores nulla cum veniam repudiandae dolorem optio debitis, provident, soluta inventore similique. Dicta nam incidunt deleniti, consectetur porro!
+			</div>
+
+			<div class="col-md-6 col-xs-12 mb-3">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tempore modi repellendus maiores nulla cum veniam repudiandae dolorem optio debitis, provident, soluta inventore similique. Dicta nam incidunt deleniti, consectetur porro!
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="copyright">
+	<div class="container">
+		&copy; {{ "now"|date("Y") }} - Todos os direitos reservados
+	</div>
+</div>";s:5:"mtime";i:1556133298;s:6:"markup";s:1112:"<div id="info">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-xs-6 mb-3">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tempore modi repellendus maiores nulla cum veniam repudiandae dolorem optio debitis, provident, soluta inventore similique. Dicta nam incidunt deleniti, consectetur porro!
+			</div>
+
+			<div class="col-md-3 col-xs-6 mb-3">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tempore modi repellendus maiores nulla cum veniam repudiandae dolorem optio debitis, provident, soluta inventore similique. Dicta nam incidunt deleniti, consectetur porro!
+			</div>
+
+			<div class="col-md-6 col-xs-12 mb-3">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tempore modi repellendus maiores nulla cum veniam repudiandae dolorem optio debitis, provident, soluta inventore similique. Dicta nam incidunt deleniti, consectetur porro!
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="copyright">
+	<div class="container">
+		&copy; {{ "now"|date("Y") }} - Todos os direitos reservados
+	</div>
+</div>";s:4:"code";N;}}

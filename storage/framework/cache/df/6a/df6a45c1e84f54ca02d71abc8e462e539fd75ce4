@@ -1,0 +1,53 @@
+1601991689a:1:{s:8:"base.htm";a:10:{s:8:"fileName";s:8:"base.htm";s:7:"content";s:553:"title = "Quem Somos"
+url = "/quem-somos"
+layout = "default"
+id = quem-somos
+
+[institucional]
+
+==
+<?php
+function onStart(){
+
+}
+?>
+==
+<section id="page-header">
+	<div class="container">
+		<div class="h1before"></div>
+		<h1 class="">Quem Somos</h1>	
+	</div>
+</section>
+
+{% set conteudo = institucional.getAll() %}
+<section id="empresa">
+	<div class="container">
+		{{ conteudo.empresa|raw }}
+	</div>
+</section>
+
+
+{% put styles %}
+	<link href="{{ ['assets/css/page.content.min.css']|theme }}" rel="stylesheet">
+{% endput %}
+
+";s:5:"mtime";i:1556289232;s:6:"markup";s:403:"<section id="page-header">
+	<div class="container">
+		<div class="h1before"></div>
+		<h1 class="">Quem Somos</h1>	
+	</div>
+</section>
+
+{% set conteudo = institucional.getAll() %}
+<section id="empresa">
+	<div class="container">
+		{{ conteudo.empresa|raw }}
+	</div>
+</section>
+
+
+{% put styles %}
+	<link href="{{ ['assets/css/page.content.min.css']|theme }}" rel="stylesheet">
+{% endput %}";s:4:"code";s:24:"function onStart(){
+
+}";s:5:"title";s:10:"Quem Somos";s:3:"url";s:11:"/quem-somos";s:6:"layout";s:7:"default";s:2:"id";s:10:"quem-somos";s:13:"institucional";a:0:{}}}

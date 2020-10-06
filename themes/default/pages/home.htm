@@ -1,0 +1,25 @@
+title = "Home"
+url = "/"
+layout = "default"
+id = home
+
+[banners]
+area = "home"
+
+==
+<?php
+function onStart(){
+
+}
+?>
+==
+{% component 'banners' %}
+
+{% put scripts %}
+
+{% endput %}
+
+{% put styles %}
+	<link href="{{ ['assets/css/page.home.min.css']|theme }}" rel="stylesheet">
+{% endput %}
+

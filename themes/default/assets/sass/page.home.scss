@@ -1,0 +1,36 @@
+@import 'global';
+
+/*col-xl*/
+@media screen and (min-width: 1200px) {
+		
+}
+
+/*col-lg col-xl*/
+@media screen and (min-width: 992px) {
+
+}
+
+/*col-lg*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+		
+}
+
+/*col-md*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+/*col-sm col-md*/
+@media screen and (max-width: 991px) {
+	 
+}
+
+/*col-sm*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+	 
+}
+
+/*col-xs*/
+@media screen and (max-width: 575px) {
+	
+}
