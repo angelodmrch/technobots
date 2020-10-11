@@ -1,4 +1,4 @@
-1601991750a:1:{s:17:"layout/footer.htm";a:5:{s:8:"fileName";s:17:"layout/footer.htm";s:7:"content";s:1112:"<div id="info">
+1602419099a:1:{s:17:"layout/footer.htm";a:5:{s:8:"fileName";s:17:"layout/footer.htm";s:7:"content";s:1112:"<div id="info">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3 col-xs-6 mb-3">
@@ -20,7 +20,7 @@
 	<div class="container">
 		&copy; {{ "now"|date("Y") }} - Todos os direitos reservados
 	</div>
-</div>";s:5:"mtime";i:1556133298;s:6:"markup";s:1112:"<div id="info">
+</div>";s:5:"mtime";i:1602110641;s:6:"markup";s:1112:"<div id="info">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3 col-xs-6 mb-3">

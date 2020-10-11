@@ -1,3 +1,8 @@
 .DS_Store
 *.log
 themes/default/node_modules
+themes/default/assets/css
+storage/framework/cache
+storage/framework/sessions
+storage/cms/cache
+storage/cms/combiner
