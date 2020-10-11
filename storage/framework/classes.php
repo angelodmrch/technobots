@@ -23,4 +23,6 @@
   'Dmrch\\Contact\\Components\\Form' => 'plugins\\dmrch\\contact\\components\\Form.php',
   'system\\Controllers\\mailtemplates' => 'modules\\system\\controllers\\mailtemplates.php',
   'system\\Controllers\\eventlogs' => 'modules\\system\\controllers\\eventlogs.php',
+  'backend\\Controllers\\users' => 'modules\\backend\\controllers\\users.php',
+  'Dmrch\\Contact\\ReportWidgets\\Contacts' => 'plugins\\dmrch\\contact\\reportwidgets\\Contacts.php',
 );
