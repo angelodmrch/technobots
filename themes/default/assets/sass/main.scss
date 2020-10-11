@@ -20,7 +20,8 @@ body {
 		z-index: 0;
 
 		.item-banner {
-    		height: 400px;
+    		height: 500px;
+    		max-height: calc(100vh - 45px);
     	}
 	}	
 
@@ -31,11 +32,10 @@ body {
 		}
 
 		#primary-navigation {
-			margin-top: 30px;
+			margin: 15px 0; 
 			width: 100%;
 
 			.logo {
-				line-height: 59px;
 				img {
 					max-width: 100%;
 				}
@@ -45,7 +45,6 @@ body {
 				ul {
 					padding: 0;
 					margin: 0;
-					line-height: 59px;
 					li {
 						display: inline-block;
 						list-style: none;
@@ -121,6 +120,13 @@ body {
 			color: $color-white;
 		}
 	}
+
+	#page-header {
+		h1 {
+			color: $color-orange;
+			text-transform: uppercase;
+		}
+	}
 }
 
 /*col-lg*/
@@ -135,7 +141,55 @@ body {
 
 /*col-sm col-md*/
 @media screen and (max-width: 991px) {
-	 
+	#carousel {
+		position: relative;
+		z-index: 0;
+
+		.item-banner {
+    		height: 500px;
+    		max-height: calc(100vh - 95px);
+    	}
+	}	
+
+	#layout-header {
+		
+		#primary-navigation {
+			display: none;
+		}
+
+		#mobile-navigation {
+			margin: 15px 0; 
+			width: 100%;
+
+			.logo {
+				img {
+					max-width: 100%;
+				}
+			}
+
+			.social {
+				a {
+					color: $color-orange;
+					font-size: 30px;
+					margin-left: 15px;
+				}
+			}
+		}
+	}
+
+	#layout-footer {		
+		#info {
+			padding: 50px 0;
+			background: $color-gray;
+			color: $color-white;
+		}
+		
+		#copyright {
+			padding: 20px 0;
+			background: $color-green;
+			color: $color-white;
+		}
+	} 
 }
 
 /*col-sm*/

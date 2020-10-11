@@ -28,4 +28,7 @@
   'dmrch\\contact\\Controllers\\form' => 'plugins\\dmrch\\contact\\controllers\\form.php',
   'system\\Controllers\\maillayouts' => 'modules\\system\\controllers\\maillayouts.php',
   'system\\Controllers\\mailpartials' => 'modules\\system\\controllers\\mailpartials.php',
+  'Dmrch\\Catalog\\Components\\Product' => 'plugins\\dmrch\\catalog\\components\\Product.php',
+  'Dmrch\\Catalog\\Models\\Category' => 'plugins\\dmrch\\catalog\\models\\Category.php',
+  'dmrch\\catalog\\Controllers\\category' => 'plugins\\dmrch\\catalog\\controllers\\category.php',
 );

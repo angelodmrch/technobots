@@ -1,0 +1,46 @@
+title = "Produtos"
+url = "/produtos"
+layout = "default"
+id = produtos
+
+[products]
+
+
+==
+<?php
+function onStart(){
+
+}
+?>
+==
+
+
+<section id="page-header">
+	<div class="container">
+		<h1>Produtos</h1>	
+	</div>
+</section>
+
+
+<section id="produtos">
+	<div class="container">
+		<div class="row">
+			{% for p in products.getAll() %}
+				<div class="col-lg-4 item">
+					<img src="{{ p.thumb.getThumb(400,500,'crop') }}" alt="{{ p.name }}">
+
+					<h2>{{ p.name }}</h2>
+
+					{{ p.description|raw }}
+
+					<a href="" class="btn btn-primary">MAIS INFORMAÇÔES</a>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+
+{% put styles %}
+	<link href="{{ ['assets/css/page.home.min.css']|theme }}" rel="stylesheet">
+{% endput %}

@@ -30,7 +30,7 @@ class __TwigTemplate_58a117f3e0074782045d9437c54350003277281c265e2b8377124220c67
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array();
-        $filters = array("escape" => 21, "date" => 21);
+        $filters = array("escape" => 3, "date" => 3);
         $functions = array();
 
         try {
@@ -59,30 +59,12 @@ class __TwigTemplate_58a117f3e0074782045d9437c54350003277281c265e2b8377124220c67
     {
         $macros = $this->macros;
         // line 1
-        echo "<div id=\"info\">
-\t<div class=\"container\">
-\t\t<div class=\"row\">
-\t\t\t<div class=\"col-md-3 col-xs-6 mb-3\">
-\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tempore modi repellendus maiores nulla cum veniam repudiandae dolorem optio debitis, provident, soluta inventore similique. Dicta nam incidunt deleniti, consectetur porro!
-\t\t\t</div>
-
-\t\t\t<div class=\"col-md-3 col-xs-6 mb-3\">
-\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tempore modi repellendus maiores nulla cum veniam repudiandae dolorem optio debitis, provident, soluta inventore similique. Dicta nam incidunt deleniti, consectetur porro!
-\t\t\t</div>
-
-\t\t\t<div class=\"col-md-6 col-xs-12 mb-3\">
-\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tempore modi repellendus maiores nulla cum veniam repudiandae dolorem optio debitis, provident, soluta inventore similique. Dicta nam incidunt deleniti, consectetur porro!
-\t\t\t</div>
-\t\t</div>
-\t</div>
-</div>
-
-<div id=\"copyright\">
+        echo "<div id=\"copyright\">
 \t<div class=\"container\">
 \t\t&copy; ";
-        // line 21
+        // line 3
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
-        echo " - Todos os direitos reservados
+        echo " - Technobots | Todos os direitos reservados
 \t</div>
 </div>";
     }
@@ -99,32 +81,14 @@ class __TwigTemplate_58a117f3e0074782045d9437c54350003277281c265e2b8377124220c67
 
     public function getDebugInfo()
     {
-        return array (  84 => 21,  62 => 1,);
+        return array (  66 => 3,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<div id=\"info\">
+        return new Source("<div id=\"copyright\">
 \t<div class=\"container\">
-\t\t<div class=\"row\">
-\t\t\t<div class=\"col-md-3 col-xs-6 mb-3\">
-\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tempore modi repellendus maiores nulla cum veniam repudiandae dolorem optio debitis, provident, soluta inventore similique. Dicta nam incidunt deleniti, consectetur porro!
-\t\t\t</div>
-
-\t\t\t<div class=\"col-md-3 col-xs-6 mb-3\">
-\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tempore modi repellendus maiores nulla cum veniam repudiandae dolorem optio debitis, provident, soluta inventore similique. Dicta nam incidunt deleniti, consectetur porro!
-\t\t\t</div>
-
-\t\t\t<div class=\"col-md-6 col-xs-12 mb-3\">
-\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tempore modi repellendus maiores nulla cum veniam repudiandae dolorem optio debitis, provident, soluta inventore similique. Dicta nam incidunt deleniti, consectetur porro!
-\t\t\t</div>
-\t\t</div>
-\t</div>
-</div>
-
-<div id=\"copyright\">
-\t<div class=\"container\">
-\t\t&copy; {{ \"now\"|date(\"Y\") }} - Todos os direitos reservados
+\t\t&copy; {{ \"now\"|date(\"Y\") }} - Technobots | Todos os direitos reservados
 \t</div>
 </div>", "C:\\wamp64\\www\\technobots/themes/default/partials/layout/footer.htm", "");
     }
