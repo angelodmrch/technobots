@@ -15,4 +15,12 @@
   'Dmrch\\Contact\\Models\\MailConfig' => 'plugins\\dmrch\\contact\\models\\MailConfig.php',
   'cms\\Controllers\\themes' => 'modules\\cms\\controllers\\themes.php',
   'system\\Controllers\\updates' => 'modules\\system\\controllers\\updates.php',
+  'dmrch\\contact\\Controllers\\contacts' => 'plugins\\dmrch\\contact\\controllers\\contacts.php',
+  'Dmrch\\Contact\\Models\\ContactsExport' => 'plugins\\dmrch\\contact\\models\\ContactsExport.php',
+  'Dmrch\\Contact\\Models\\Contacts' => 'plugins\\dmrch\\contact\\models\\Contacts.php',
+  'dmrch\\contact\\Controllers\\form' => 'plugins\\dmrch\\contact\\controllers\\form.php',
+  'Dmrch\\Contact\\Models\\Form' => 'plugins\\dmrch\\contact\\models\\Form.php',
+  'Dmrch\\Contact\\Components\\Form' => 'plugins\\dmrch\\contact\\components\\Form.php',
+  'system\\Controllers\\mailtemplates' => 'modules\\system\\controllers\\mailtemplates.php',
+  'system\\Controllers\\eventlogs' => 'modules\\system\\controllers\\eventlogs.php',
 );
