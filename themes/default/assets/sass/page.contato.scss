@@ -1,0 +1,51 @@
+@import 'global';
+
+/*col-xl*/
+@media screen and (min-width: 1200px) {
+		
+}
+
+/*col-lg col-xl*/
+@media screen and (min-width: 992px) {
+
+}
+
+/*col-lg*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+		
+}
+
+/*col-md*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+/*col-sm col-md*/
+@media screen and (max-width: 991px) {
+	 
+}
+
+/*col-sm*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+	 
+}
+
+/*col-xs*/
+@media screen and (max-width: 575px) {
+	
+}
+
+.btn-primary {
+         margin-top: 10px;
+         padding: 0%;
+         text-decoration: none;
+         text-align:center;
+         display: block;
+         border-radius:30px;
+         border:none;
+         width: 30x;
+         height: 30px;
+         background-color: $color-green !important;
+
+
+    }
