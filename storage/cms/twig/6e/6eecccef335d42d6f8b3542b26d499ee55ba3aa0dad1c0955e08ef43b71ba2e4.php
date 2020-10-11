@@ -29,7 +29,7 @@ class __TwigTemplate_d2cd5bf597fb268be320d79138b552a5d4f303a40fc25e6923182ae1629
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("placeholder" => 13, "styles" => 16, "partial" => 35, "page" => 40, "framework" => 58, "scripts" => 60);
+        $tags = array("placeholder" => 13, "styles" => 16, "partial" => 44, "page" => 49, "framework" => 68, "scripts" => 70);
         $filters = array("escape" => 5, "theme" => 15);
         $functions = array();
 
@@ -90,7 +90,7 @@ class __TwigTemplate_d2cd5bf597fb268be320d79138b552a5d4f303a40fc25e6923182ae1629
         echo "        
         <link rel=\"icon\" type=\"image/x-icon\" href=\"";
         // line 15
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/favicon.ico");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/favicon.png");
         echo "\" />
         ";
         // line 16
@@ -98,8 +98,8 @@ class __TwigTemplate_d2cd5bf597fb268be320d79138b552a5d4f303a40fc25e6923182ae1629
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
         // line 17
         echo "        <link href=\"";
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "assets/css/bootstrap.min.css", 1 => "assets/css/main.min.css", 2 => "bower_components/sidr/dist/stylesheets/jquery.sidr.light.css"]);
-        // line 21
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "assets/css/bootstrap.min.css", 1 => "assets/css/main.min.css", 2 => "bower_components/sidr/dist/stylesheets/jquery.sidr.light.css", 3 => "bower_components/tiny-slider/dist/tiny-slider.css"]);
+        // line 22
         echo "\" rel=\"stylesheet\" /> 
 
         <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.6.1/css/all.css\" integrity=\"sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP\" crossorigin=\"anonymous\">
@@ -110,42 +110,50 @@ class __TwigTemplate_d2cd5bf597fb268be320d79138b552a5d4f303a40fc25e6923182ae1629
     <body>
 
         ";
-        // line 31
+        // line 32
         echo "        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-180299558-1\"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-180299558-1');
+        </script>
 
         <!-- Header -->
         <header id=\"layout-header\">
             ";
-        // line 35
+        // line 44
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("layout/header"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 36
+        // line 45
         echo "        </header>
 
         <!-- Content -->
         <div id=\"layout-content\">
             ";
-        // line 40
+        // line 49
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
-        // line 41
+        // line 50
         echo "        </div>
 
         <!-- Footer -->
         <footer id=\"layout-footer\">
             ";
-        // line 45
+        // line 54
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("layout/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 46
+        // line 55
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 49
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "bower_components/jquery/dist/jquery.js", 1 => "bower_components/sidr/dist/jquery.sidr.min.js", 2 => "bower_components/bootstrap/dist/js/bootstrap.min.js"]);
-        // line 51
+        // line 58
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "bower_components/jquery/dist/jquery.js", 1 => "bower_components/sidr/dist/jquery.sidr.min.js", 2 => "bower_components/bootstrap/dist/js/bootstrap.min.js", 3 => "bower_components/tiny-slider/dist/min/tiny-slider.js"]);
+        // line 61
         echo "\">
         </script>
         
@@ -154,7 +162,7 @@ class __TwigTemplate_d2cd5bf597fb268be320d79138b552a5d4f303a40fc25e6923182ae1629
         </script>
            
         ";
-        // line 58
+        // line 68
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
@@ -165,19 +173,24 @@ class __TwigTemplate_d2cd5bf597fb268be320d79138b552a5d4f303a40fc25e6923182ae1629
         }
         echo '<link rel="stylesheet" property="stylesheet" href="' . Request::getBasePath() .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 59
+        // line 69
         echo "
         ";
-        // line 60
+        // line 70
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 61
+        // line 71
         echo "
         ";
-        // line 62
+        // line 72
         $context['__placeholder_footer_default_contents'] = null;        echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('footer', $context['__placeholder_footer_default_contents']);
-        unset($context['__placeholder_footer_default_contents']);        // line 63
+        unset($context['__placeholder_footer_default_contents']);        // line 73
         echo "
+        <a href=\"https://api.whatsapp.com/send?phone=5547992192045\" target=\"_blank\" class=\"whatsapp\"><img src=\"";
+        // line 74
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/whatsapp-logo.png");
+        echo "\" alt=\"Whatsapp\"></a>
+
     </body>
 </html>";
     }
@@ -194,7 +207,7 @@ class __TwigTemplate_d2cd5bf597fb268be320d79138b552a5d4f303a40fc25e6923182ae1629
 
     public function getDebugInfo()
     {
-        return array (  180 => 63,  178 => 62,  175 => 61,  172 => 60,  169 => 59,  158 => 58,  149 => 51,  147 => 49,  142 => 46,  138 => 45,  132 => 41,  130 => 40,  124 => 36,  120 => 35,  114 => 31,  103 => 21,  100 => 17,  97 => 16,  93 => 15,  90 => 14,  88 => 13,  80 => 8,  76 => 7,  72 => 6,  68 => 5,  62 => 1,);
+        return array (  191 => 74,  188 => 73,  186 => 72,  183 => 71,  180 => 70,  177 => 69,  166 => 68,  157 => 61,  155 => 58,  150 => 55,  146 => 54,  140 => 50,  138 => 49,  132 => 45,  128 => 44,  114 => 32,  103 => 22,  100 => 17,  97 => 16,  93 => 15,  90 => 14,  88 => 13,  80 => 8,  76 => 7,  72 => 6,  68 => 5,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -213,12 +226,13 @@ class __TwigTemplate_d2cd5bf597fb268be320d79138b552a5d4f303a40fc25e6923182ae1629
 
         {% placeholder head %}
         
-        <link rel=\"icon\" type=\"image/x-icon\" href=\"{{ 'assets/images/favicon.ico'|theme }}\" />
+        <link rel=\"icon\" type=\"image/x-icon\" href=\"{{ 'assets/images/favicon.png'|theme }}\" />
         {% styles %}
         <link href=\"{{ [         
             'assets/css/bootstrap.min.css',
             'assets/css/main.min.css',
-            'bower_components/sidr/dist/stylesheets/jquery.sidr.light.css'
+            'bower_components/sidr/dist/stylesheets/jquery.sidr.light.css',
+            'bower_components/tiny-slider/dist/tiny-slider.css',
         ]|theme }}\" rel=\"stylesheet\" /> 
 
         <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.6.1/css/all.css\" integrity=\"sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP\" crossorigin=\"anonymous\">
@@ -230,6 +244,14 @@ class __TwigTemplate_d2cd5bf597fb268be320d79138b552a5d4f303a40fc25e6923182ae1629
 
         {# **ANALYTICS** #}
         <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-180299558-1\"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-180299558-1');
+        </script>
 
         <!-- Header -->
         <header id=\"layout-header\">
@@ -249,7 +271,8 @@ class __TwigTemplate_d2cd5bf597fb268be320d79138b552a5d4f303a40fc25e6923182ae1629
         <!-- Scripts -->
         <script src=\"{{ ['bower_components/jquery/dist/jquery.js',
         'bower_components/sidr/dist/jquery.sidr.min.js',
-        'bower_components/bootstrap/dist/js/bootstrap.min.js']|theme }}\">
+        'bower_components/bootstrap/dist/js/bootstrap.min.js',
+        'bower_components/tiny-slider/dist/min/tiny-slider.js']|theme }}\">
         </script>
         
         <script>                    
@@ -261,6 +284,8 @@ class __TwigTemplate_d2cd5bf597fb268be320d79138b552a5d4f303a40fc25e6923182ae1629
         {% scripts %}
 
         {% placeholder footer %}
+
+        <a href=\"https://api.whatsapp.com/send?phone=5547992192045\" target=\"_blank\" class=\"whatsapp\"><img src=\"{{ 'assets/images/whatsapp-logo.png'|theme }}\" alt=\"Whatsapp\"></a>
 
     </body>
 </html>", "C:\\wamp64\\www\\technobots/themes/default/layouts/default.htm", "");

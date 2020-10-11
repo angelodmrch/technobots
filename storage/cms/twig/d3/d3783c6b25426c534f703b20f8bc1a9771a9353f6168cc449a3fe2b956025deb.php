@@ -29,8 +29,8 @@ class __TwigTemplate_74ec6b41bffb61db8304e49e62ccc946b8a982731c3870d2d7c59d39695
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("component" => 3, "put" => 12);
-        $filters = array("theme" => 13);
+        $tags = array("component" => 10, "put" => 19);
+        $filters = array("theme" => 20);
         $functions = array();
 
         try {
@@ -59,16 +59,23 @@ class __TwigTemplate_74ec6b41bffb61db8304e49e62ccc946b8a982731c3870d2d7c59d39695
     {
         $macros = $this->macros;
         // line 1
-        echo "<div id=\"contato\">\t
+        echo "<section id=\"page-header\">
 \t<div class=\"container\">
-\t\t";
-        // line 3
+\t\t<div class=\"h1before\"></div>
+\t\t<h1 class=\"\">Contato</h1>\t
+\t</div>
+</section>
+
+<div id=\"contato\">
+    <div class=\"container\">
+        ";
+        // line 10
         $context['__cms_component_params'] = [];
         $context['__cms_component_params']['code'] = "contact"        ;
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("forms"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 4
-        echo "\t</div>
+        // line 11
+        echo "    </div>
 </div>
 
 <div id=\"map\">
@@ -77,14 +84,14 @@ class __TwigTemplate_74ec6b41bffb61db8304e49e62ccc946b8a982731c3870d2d7c59d39695
 
 
 ";
-        // line 12
+        // line 19
         echo $this->env->getExtension('Cms\Twig\Extension')->startBlock('styles'        );
-        // line 13
+        // line 20
         echo "\t<link href=\"";
         echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "assets/css/main.min.css"]);
         echo "\" rel=\"stylesheet\">
 ";
-        // line 12
+        // line 19
         echo $this->env->getExtension('Cms\Twig\Extension')->endBlock(true        );
     }
 
@@ -100,15 +107,22 @@ class __TwigTemplate_74ec6b41bffb61db8304e49e62ccc946b8a982731c3870d2d7c59d39695
 
     public function getDebugInfo()
     {
-        return array (  88 => 12,  83 => 13,  81 => 12,  71 => 4,  66 => 3,  62 => 1,);
+        return array (  95 => 19,  90 => 20,  88 => 19,  78 => 11,  73 => 10,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<div id=\"contato\">\t
+        return new Source("<section id=\"page-header\">
 \t<div class=\"container\">
-\t\t{% component 'forms' code=\"contact\" %}
+\t\t<div class=\"h1before\"></div>
+\t\t<h1 class=\"\">Contato</h1>\t
 \t</div>
+</section>
+
+<div id=\"contato\">
+    <div class=\"container\">
+        {% component 'forms' code=\"contact\" %}
+    </div>
 </div>
 
 <div id=\"map\">

@@ -35,8 +35,10 @@ body {
 			width: 100%;
 
 			.logo {
-				float: left;
 				line-height: 59px;
+				img {
+					max-width: 100%;
+				}
 			}
 
 			nav {				
@@ -56,15 +58,13 @@ body {
 							display: block;
 							font-size: 16px;
 							font-weight: normal;
-							color: $color-white;
+							color: $color-green;
 							padding: 0 25px;
-							background: $color-blue-light;
 							text-transform: uppercase;
 							//@include transition(0.3s);
 							&:hover, &:focus, &.active {
-								color: $color-white;
+								color: $color-orange;
 								text-decoration: none;
-								background: $color-blue;
 							}
 							&::after {
 							    display: block;
@@ -98,9 +98,12 @@ body {
 				}
 			}
 
-			.cart {
-				float: right;
-				line-height: 57px;
+			.social {
+				a {
+					color: $color-orange;
+					font-size: 30px;
+					margin-left: 15px;
+				}
 			}
 		}
 	}
@@ -114,7 +117,7 @@ body {
 		
 		#copyright {
 			padding: 20px 0;
-			background: $color-blue;
+			background: $color-green;
 			color: $color-white;
 		}
 	}
@@ -143,4 +146,16 @@ body {
 /*col-xs*/
 @media screen and (max-width: 575px) {
 	
+}
+
+.whatsapp {
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	width: 70px;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
 }
