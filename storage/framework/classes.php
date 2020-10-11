@@ -22,6 +22,7 @@
   'Dmrch\\Contact\\Models\\ContactsExport' => 'plugins\\dmrch\\contact\\models\\ContactsExport.php',
   'backend\\Controllers\\accesslogs' => 'modules\\backend\\controllers\\accesslogs.php',
   'Dmrch\\Contact\\Components\\Form' => 'plugins\\dmrch\\contact\\components\\Form.php',
+
   'Dmrch\\Contact\\Models\\Form' => 'plugins\\dmrch\\contact\\models\\Form.php',
   'dmrch\\catalog\\Controllers\\product' => 'plugins\\dmrch\\catalog\\controllers\\product.php',
   'Dmrch\\Catalog\\Models\\Product' => 'plugins\\dmrch\\catalog\\models\\Product.php',
