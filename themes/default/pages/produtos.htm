@@ -27,13 +27,21 @@ function onStart(){
 		<div class="row">
 			{% for p in products.getAll() %}
 				<div class="col-lg-4 item">
-					<img src="{{ p.thumb.getThumb(400,500,'crop') }}" alt="{{ p.name }}">
+					<div class="img">
+						<img src="{{ p.thumb.getPath() }}" alt="{{ p.name }}">
+					</div>
 
-					<h2>{{ p.name }}</h2>
+					<div class="text">
 
-					{{ p.description|raw }}
+						<h2>{{ p.name }}</h2>
 
-					<a href="" class="btn btn-primary">MAIS INFORMAÇÔES</a>
+						{{ p.description|raw }}
+
+						<br>
+
+						<a href="" class="btn btn-primary">ORÇAMENTO</a>
+
+					</div>
 				</div>
 			{% endfor %}
 		</div>
@@ -42,5 +50,5 @@ function onStart(){
 
 
 {% put styles %}
-	<link href="{{ ['assets/css/page.home.min.css']|theme }}" rel="stylesheet">
+	<link href="{{ ['assets/css/page.produtos.min.css']|theme }}" rel="stylesheet">
 {% endput %}

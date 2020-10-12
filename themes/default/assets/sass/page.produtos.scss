@@ -1,0 +1,63 @@
+@import 'global';
+
+/*col-xl*/
+@media screen and (min-width: 1200px) {
+		
+}
+
+/*col-lg col-xl*/
+@media screen and (min-width: 992px) {
+	#produtos {
+		padding: 50px 0;
+
+		.item {
+			text-align: center;
+
+			.img {
+				height: 400px;
+				display: grid;
+				place-items: center;
+
+				img {
+					max-width: 100%;
+					max-height: 100%;
+				}
+			}
+
+			.text {
+				h2 {
+					font-weight: $bold;
+					font-size: 28px;
+					text-transform: uppercase;
+					color: $color-orange;
+					margin: 30px 0;
+				}
+			}
+		}
+	}
+}
+
+/*col-lg*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+		
+}
+
+/*col-md*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+/*col-sm col-md*/
+@media screen and (max-width: 991px) {
+	 
+}
+
+/*col-sm*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+	 
+}
+
+/*col-xs*/
+@media screen and (max-width: 575px) {
+	
+}

@@ -80,20 +80,20 @@ class Plugin extends PluginBase
     {
         return [
             'product' => [
-                'label'       => 'Catalog',
+                'label'       => 'Catalogo',
                 'url'         => Backend::url('dmrch/catalog/product'),
                 'icon'        => 'icon-cubes',
                 'permissions' => ['dmrch.catalog.*'],
                 'order'       => 500,
                 'sideMenu' => [
                     'product' => [
-                        'label'       => 'Products',
+                        'label'       => 'Produtos',
                         'icon'        => 'icon-cube',
                         'url'         => Backend::url('dmrch/catalog/product'),
                         'permissions' => ['dmrch.catalog.*'],
                     ], 
                     'category' => [
-                        'label'       => 'Categories',
+                        'label'       => 'Categorias',
                         'icon'        => 'icon-cubes',
                         'url'         => Backend::url('dmrch/catalog/category'), 
                         'permissions' => ['dmrch.catalog.*'],

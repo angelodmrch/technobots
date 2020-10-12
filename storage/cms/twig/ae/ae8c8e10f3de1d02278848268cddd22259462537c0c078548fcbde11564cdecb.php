@@ -71,7 +71,7 @@ class __TwigTemplate_dea37eba58364168404e8e8956f71169b7b223bce9881fa54aabb1fff2d
         echo "\" alt=\"Technobots\" ></a></div>
 \t\t\t</div>
 
-\t\t\t<div class=\"col-lg-6 text-center\">
+\t\t\t<div class=\"col-lg-7 text-center\">
 \t\t\t\t<nav>
 \t\t\t\t\t";
         // line 10
@@ -82,9 +82,10 @@ class __TwigTemplate_dea37eba58364168404e8e8956f71169b7b223bce9881fa54aabb1fff2d
         echo "\t\t\t\t</nav>
 \t\t\t</div>
 
-\t\t\t<div class=\"col-lg-3 text-right social\">
+\t\t\t<div class=\"col-lg-2 text-right social\">
 \t\t\t\t<a href=\"https://www.instagram.com/technobots.ltda/\" target=\"_blank\"><i class=\"fab fa-instagram\"></i></a>
 \t\t\t\t<a href=\"https://www.facebook.com/technobots01\" target=\"_blank\"><i class=\"fab fa-facebook-square\"></i></a>
+\t\t\t\t<a href=\"https://www.youtube.com/channel/UCHcAZG5O_sTT5kZ6kULvdog\" target=\"_blank\"><i class=\"fab fa-youtube\"></i></a>
 \t\t\t</div>
 \t\t</div>\t\t\t
 \t</div>
@@ -95,7 +96,7 @@ class __TwigTemplate_dea37eba58364168404e8e8956f71169b7b223bce9881fa54aabb1fff2d
 \t\t<div class=\"row\">
 \t\t\t<div class=\"col-12 text-center\">
 \t\t\t\t<div class=\"logo\"><a href=\"";
-        // line 26
+        // line 27
         echo url("/");
         echo "\"><img src=\"";
         echo asset("themes/default/assets/images/logo.png");
@@ -109,17 +110,18 @@ class __TwigTemplate_dea37eba58364168404e8e8956f71169b7b223bce9881fa54aabb1fff2d
 \t\t\t<div class=\"col-9 social text-right\"> 
 \t\t\t\t<a href=\"https://www.instagram.com/technobots.ltda/\" target=\"_blank\"><i class=\"fab fa-instagram\"></i></a>
 \t\t\t\t<a href=\"https://www.facebook.com/technobots01\" target=\"_blank\"><i class=\"fab fa-facebook-square\"></i></a>
+\t\t\t\t<a href=\"https://www.youtube.com/channel/UCHcAZG5O_sTT5kZ6kULvdog\" target=\"_blank\"><i class=\"fab fa-youtube\"></i></a>
 \t\t\t</div>
 
 \t\t</div>
 
 \t\t<div id=\"sidr\">
 \t\t\t";
-        // line 41
+        // line 43
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("layout/menu"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 42
+        // line 44
         echo "\t\t</div>
 \t</div>
 </div>";
@@ -137,7 +139,7 @@ class __TwigTemplate_dea37eba58364168404e8e8956f71169b7b223bce9881fa54aabb1fff2d
 
     public function getDebugInfo()
     {
-        return array (  123 => 42,  119 => 41,  99 => 26,  82 => 11,  78 => 10,  68 => 5,  62 => 1,);
+        return array (  125 => 44,  121 => 43,  100 => 27,  82 => 11,  78 => 10,  68 => 5,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -149,15 +151,16 @@ class __TwigTemplate_dea37eba58364168404e8e8956f71169b7b223bce9881fa54aabb1fff2d
 \t\t\t\t<div class=\"logo\"><a href=\"{{ url('/') }}\"><img src=\"{{ asset('themes/default/assets/images/logo.png') }}\" alt=\"Technobots\" ></a></div>
 \t\t\t</div>
 
-\t\t\t<div class=\"col-lg-6 text-center\">
+\t\t\t<div class=\"col-lg-7 text-center\">
 \t\t\t\t<nav>
 \t\t\t\t\t{% partial \"layout/menu\" %}
 \t\t\t\t</nav>
 \t\t\t</div>
 
-\t\t\t<div class=\"col-lg-3 text-right social\">
+\t\t\t<div class=\"col-lg-2 text-right social\">
 \t\t\t\t<a href=\"https://www.instagram.com/technobots.ltda/\" target=\"_blank\"><i class=\"fab fa-instagram\"></i></a>
 \t\t\t\t<a href=\"https://www.facebook.com/technobots01\" target=\"_blank\"><i class=\"fab fa-facebook-square\"></i></a>
+\t\t\t\t<a href=\"https://www.youtube.com/channel/UCHcAZG5O_sTT5kZ6kULvdog\" target=\"_blank\"><i class=\"fab fa-youtube\"></i></a>
 \t\t\t</div>
 \t\t</div>\t\t\t
 \t</div>
@@ -177,6 +180,7 @@ class __TwigTemplate_dea37eba58364168404e8e8956f71169b7b223bce9881fa54aabb1fff2d
 \t\t\t<div class=\"col-9 social text-right\"> 
 \t\t\t\t<a href=\"https://www.instagram.com/technobots.ltda/\" target=\"_blank\"><i class=\"fab fa-instagram\"></i></a>
 \t\t\t\t<a href=\"https://www.facebook.com/technobots01\" target=\"_blank\"><i class=\"fab fa-facebook-square\"></i></a>
+\t\t\t\t<a href=\"https://www.youtube.com/channel/UCHcAZG5O_sTT5kZ6kULvdog\" target=\"_blank\"><i class=\"fab fa-youtube\"></i></a>
 \t\t\t</div>
 
 \t\t</div>

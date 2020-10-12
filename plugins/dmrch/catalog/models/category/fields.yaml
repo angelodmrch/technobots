@@ -10,7 +10,7 @@ fields:
         default: 1
 
     name:
-        label: Name
+        label: Nome
         type: text
         span: left
 
@@ -23,7 +23,7 @@ fields:
             type: slug
 
     description:
-        label: Description
+        label: Descrição
         type: richeditor
         toolbarButtons: fullscreen|bold|italic|underline|strikeThrough|subscript|superscript|fontFamily|fontSize|color|emoticons|inlineStyle|paragraphStyle|paragraphFormat|align|formatOL|formatUL|outdent|indent|quote|insertHR|insertLink|insertImage|insertVideo|insertAudio|insertFile|insertTable|undo|redo|clearFormatting|selectAll|html
 

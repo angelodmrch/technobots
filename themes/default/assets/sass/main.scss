@@ -56,10 +56,11 @@ body {
 						a {
 							display: block;
 							font-size: 16px;
-							font-weight: normal;
+							font-weight: $bold;
 							color: $color-green;
 							padding: 0 25px;
 							text-transform: uppercase;
+							line-height: 45px;
 							//@include transition(0.3s);
 							&:hover, &:focus, &.active {
 								color: $color-orange;
@@ -72,25 +73,6 @@ body {
 							    height: 0;
 							    overflow: hidden;
 							    visibility: hidden;
-							}
-						}
-
-						.dropdown-menu {
-							min-width: 160px;
-							padding: 0;
-							margin: 1px 0 0;
-							border: 0;
-							border-radius: 0px;
-							-webkit-box-shadow: none;
-							box-shadow: none; 
-							li {
-								width: 100%;
-								display: block;
-								a{
-									width: 100%;
-									padding: 15px;
-
-								}
 							}
 						}
 					}
