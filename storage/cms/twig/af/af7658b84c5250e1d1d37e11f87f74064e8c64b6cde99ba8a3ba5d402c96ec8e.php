@@ -31,13 +31,13 @@ class __TwigTemplate_754c1a844579c3ae2c22915774ef6ccc73ae3ce2762f2cb710cee2f7298
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array("partial" => 10);
         $filters = array();
-        $functions = array("url" => 5, "asset" => 5, "form_open" => 30, "form_close" => 32);
+        $functions = array("url" => 5, "asset" => 5);
 
         try {
             $this->sandbox->checkSecurity(
                 ['partial'],
                 [],
-                ['url', 'asset', 'form_open', 'form_close']
+                ['url', 'asset']
             );
         } catch (SecurityError $e) {
             $e->setSourceContext($this->source);
@@ -83,7 +83,7 @@ class __TwigTemplate_754c1a844579c3ae2c22915774ef6ccc73ae3ce2762f2cb710cee2f7298
 \t\t\t</div>
 
 \t\t\t<div class=\"col-lg-3 text-right social\">
-\t\t\t\t<a href=\"https://www.facebook.com/technobots01\" target=\"_blank\"><i class=\"fab fa-instagram\"></i></a>
+\t\t\t\t<a href=\"https://www.instagram.com/technobots.ltda/\" target=\"_blank\"><i class=\"fab fa-instagram\"></i></a>
 \t\t\t\t<a href=\"https://www.facebook.com/technobots01\" target=\"_blank\"><i class=\"fab fa-facebook-square\"></i></a>
 \t\t\t</div>
 \t\t</div>\t\t\t
@@ -93,25 +93,13 @@ class __TwigTemplate_754c1a844579c3ae2c22915774ef6ccc73ae3ce2762f2cb710cee2f7298
 <div id=\"mobile-navigation\">
 \t<div class=\"container\">
 \t\t<div class=\"row\">
-\t\t\t<div class=\"col-12 text-right\">
+\t\t\t<div class=\"col-12 text-center\">
 \t\t\t\t<div class=\"logo\"><a href=\"";
         // line 26
         echo url("/");
         echo "\"><img src=\"";
         echo asset("themes/default/assets/images/logo.png");
-        echo "\" alt=\"Technobots\" width=\"143px\" style=\"max-width: 100%\"></a></div>
-\t\t\t</div>
-
-\t\t\t<div class=\"col-12 busca\">
-\t\t\t\t";
-        // line 30
-        echo call_user_func_array($this->env->getFunction('form_open')->getCallable(), ["open", ["request" => "produto::onSubmit"]]);
-        echo "
-\t\t\t\t\t<input type=\"text\" name=\"query\" placeholder=\"BUSCA\"><button type=\"submit\" class=\"btn btn-gray\"><i class=\"fas fa-search\"></i></button>
-\t\t\t\t";
-        // line 32
-        echo call_user_func_array($this->env->getFunction('form_close')->getCallable(), ["close"]);
-        echo "
+        echo "\" alt=\"Technobots\" width=\"300px\" style=\"max-width: 100%\"></a></div>
 \t\t\t</div>
 
 \t\t\t<div class=\"col-3 social text-left\"> 
@@ -119,7 +107,7 @@ class __TwigTemplate_754c1a844579c3ae2c22915774ef6ccc73ae3ce2762f2cb710cee2f7298
 \t\t\t</div>
 
 \t\t\t<div class=\"col-9 social text-right\"> 
-\t\t\t\t<a href=\"https://www.facebook.com/technobots01\" target=\"_blank\"><i class=\"fab fa-instagram\"></i></a>
+\t\t\t\t<a href=\"https://www.instagram.com/technobots.ltda/\" target=\"_blank\"><i class=\"fab fa-instagram\"></i></a>
 \t\t\t\t<a href=\"https://www.facebook.com/technobots01\" target=\"_blank\"><i class=\"fab fa-facebook-square\"></i></a>
 \t\t\t</div>
 
@@ -127,11 +115,11 @@ class __TwigTemplate_754c1a844579c3ae2c22915774ef6ccc73ae3ce2762f2cb710cee2f7298
 
 \t\t<div id=\"sidr\">
 \t\t\t";
-        // line 47
+        // line 41
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("layout/menu"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 48
+        // line 42
         echo "\t\t</div>
 \t</div>
 </div>";
@@ -149,7 +137,7 @@ class __TwigTemplate_754c1a844579c3ae2c22915774ef6ccc73ae3ce2762f2cb710cee2f7298
 
     public function getDebugInfo()
     {
-        return array (  135 => 48,  131 => 47,  113 => 32,  108 => 30,  99 => 26,  82 => 11,  78 => 10,  68 => 5,  62 => 1,);
+        return array (  123 => 42,  119 => 41,  99 => 26,  82 => 11,  78 => 10,  68 => 5,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -168,7 +156,7 @@ class __TwigTemplate_754c1a844579c3ae2c22915774ef6ccc73ae3ce2762f2cb710cee2f7298
 \t\t\t</div>
 
 \t\t\t<div class=\"col-lg-3 text-right social\">
-\t\t\t\t<a href=\"https://www.facebook.com/technobots01\" target=\"_blank\"><i class=\"fab fa-instagram\"></i></a>
+\t\t\t\t<a href=\"https://www.instagram.com/technobots.ltda/\" target=\"_blank\"><i class=\"fab fa-instagram\"></i></a>
 \t\t\t\t<a href=\"https://www.facebook.com/technobots01\" target=\"_blank\"><i class=\"fab fa-facebook-square\"></i></a>
 \t\t\t</div>
 \t\t</div>\t\t\t
@@ -178,14 +166,8 @@ class __TwigTemplate_754c1a844579c3ae2c22915774ef6ccc73ae3ce2762f2cb710cee2f7298
 <div id=\"mobile-navigation\">
 \t<div class=\"container\">
 \t\t<div class=\"row\">
-\t\t\t<div class=\"col-12 text-right\">
-\t\t\t\t<div class=\"logo\"><a href=\"{{ url('/') }}\"><img src=\"{{ asset('themes/default/assets/images/logo.png') }}\" alt=\"Technobots\" width=\"143px\" style=\"max-width: 100%\"></a></div>
-\t\t\t</div>
-
-\t\t\t<div class=\"col-12 busca\">
-\t\t\t\t{{ form_open({ request: 'produto::onSubmit' }) }}
-\t\t\t\t\t<input type=\"text\" name=\"query\" placeholder=\"BUSCA\"><button type=\"submit\" class=\"btn btn-gray\"><i class=\"fas fa-search\"></i></button>
-\t\t\t\t{{ form_close() }}
+\t\t\t<div class=\"col-12 text-center\">
+\t\t\t\t<div class=\"logo\"><a href=\"{{ url('/') }}\"><img src=\"{{ asset('themes/default/assets/images/logo.png') }}\" alt=\"Technobots\" width=\"300px\" style=\"max-width: 100%\"></a></div>
 \t\t\t</div>
 
 \t\t\t<div class=\"col-3 social text-left\"> 
@@ -193,7 +175,7 @@ class __TwigTemplate_754c1a844579c3ae2c22915774ef6ccc73ae3ce2762f2cb710cee2f7298
 \t\t\t</div>
 
 \t\t\t<div class=\"col-9 social text-right\"> 
-\t\t\t\t<a href=\"https://www.facebook.com/technobots01\" target=\"_blank\"><i class=\"fab fa-instagram\"></i></a>
+\t\t\t\t<a href=\"https://www.instagram.com/technobots.ltda/\" target=\"_blank\"><i class=\"fab fa-instagram\"></i></a>
 \t\t\t\t<a href=\"https://www.facebook.com/technobots01\" target=\"_blank\"><i class=\"fab fa-facebook-square\"></i></a>
 \t\t\t</div>
 
