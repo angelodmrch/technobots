@@ -29,14 +29,14 @@ class __TwigTemplate_31a9bf4d6647d1b164665db73f8e35ab63bab328d21953d55cde3499bca
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("component" => 1, "put" => 3);
-        $filters = array("theme" => 8);
+        $tags = array("component" => 1, "for" => 12, "put" => 26);
+        $filters = array("escape" => 15, "theme" => 62);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                ['component', 'put'],
-                ['theme'],
+                ['component', 'for', 'put'],
+                ['escape', 'theme'],
                 []
             );
         } catch (SecurityError $e) {
@@ -64,25 +64,93 @@ class __TwigTemplate_31a9bf4d6647d1b164665db73f8e35ab63bab328d21953d55cde3499bca
         unset($context['__cms_component_params']);
         // line 2
         echo "
+<div id=\"clientes\">
+\t<div class=\"container\">
+
+\t\t<h1>Clientes</h1>
+
+\t\t<div class=\"carousel-box\">
+
+\t\t\t<div id=\"clientes-carousel\">
+
+\t\t\t\t";
+        // line 12
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["conteudo"] ?? null), "clientes", [], "any", false, false, true, 12));
+        foreach ($context['_seq'] as $context["_key"] => $context["c"]) {
+            // line 13
+            echo "\t\t\t\t\t<div class=\"item\">
+\t\t\t\t\t\t<div class=\"box\">
+\t\t\t\t\t\t\t<img src=\"";
+            // line 15
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["c"], "getPath", [], "method", false, false, true, 15), 15, $this->source), "html", null, true);
+            echo "\" alt=\"";
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["c"], "title", [], "any", false, false, true, 15), 15, $this->source), "html", null, true);
+            echo "\">
+\t\t\t\t\t\t</div>
+\t\t\t\t\t</div>
+\t\t\t\t";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['c'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 19
+        echo "
+\t\t\t</div>
+
+\t\t</div>
+\t</div>
+</div>
+
 ";
-        // line 3
+        // line 26
         echo $this->env->getExtension('Cms\Twig\Extension')->startBlock('scripts'        );
-        // line 4
-        echo "
+        echo "\t\t
+\t<script>
+\t\tvar slider = tns({
+\t\t    container: '#clientes-carousel',
+\t\t    items: 5,    \t\t
+    \t\tspeed: 1000,
+    \t\tloop: true,
+    \t\tautoplayHoverPause: true,
+    \t\tautoplayButtonOutput: false,
+    \t\tcenter: true,
+    \t\tautoplayTimeout: 7000,
+    \t\tautoplay: true,
+    \t\tcontrols: true,
+    \t\tnav: false,
+    \t\tcontrolsPosition: 'top',
+    \t\tnavPosition: 'bottom',
+    \t\tcontrolsText: ['<i class=\"fas fa-chevron-left\"></i>','<i class=\"fas fa-chevron-right\"></i>'],
+\t\t    responsive: {
+\t\t      300: {
+\t\t\t\titems: 1
+\t\t      },
+\t\t      576: {
+\t\t        items: 1
+\t\t      },
+\t\t      768: {
+\t\t        items: 3
+\t\t      },
+\t\t      992: {
+\t\t        items: 5
+\t\t      }
+\t\t    }
+\t\t});
+\t</script>
 ";
-        // line 3
         echo $this->env->getExtension('Cms\Twig\Extension')->endBlock(true        );
-        // line 6
+        // line 60
         echo "
 ";
-        // line 7
+        // line 61
         echo $this->env->getExtension('Cms\Twig\Extension')->startBlock('styles'        );
-        // line 8
+        // line 62
         echo "\t<link href=\"";
         echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "assets/css/page.home.min.css"]);
         echo "\" rel=\"stylesheet\">
 ";
-        // line 7
+        // line 61
         echo $this->env->getExtension('Cms\Twig\Extension')->endBlock(true        );
     }
 
@@ -98,15 +166,69 @@ class __TwigTemplate_31a9bf4d6647d1b164665db73f8e35ab63bab328d21953d55cde3499bca
 
     public function getDebugInfo()
     {
-        return array (  86 => 7,  81 => 8,  79 => 7,  76 => 6,  74 => 3,  71 => 4,  69 => 3,  66 => 2,  62 => 1,);
+        return array (  154 => 61,  149 => 62,  147 => 61,  144 => 60,  107 => 26,  98 => 19,  86 => 15,  82 => 13,  78 => 12,  66 => 2,  62 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% component 'banners' %}
 
-{% put scripts %}
+<div id=\"clientes\">
+\t<div class=\"container\">
 
+\t\t<h1>Clientes</h1>
+
+\t\t<div class=\"carousel-box\">
+
+\t\t\t<div id=\"clientes-carousel\">
+
+\t\t\t\t{% for c in conteudo.clientes %}
+\t\t\t\t\t<div class=\"item\">
+\t\t\t\t\t\t<div class=\"box\">
+\t\t\t\t\t\t\t<img src=\"{{ c.getPath() }}\" alt=\"{{ c.title }}\">
+\t\t\t\t\t\t</div>
+\t\t\t\t\t</div>
+\t\t\t\t{% endfor %}
+
+\t\t\t</div>
+
+\t\t</div>
+\t</div>
+</div>
+
+{% put scripts %}\t\t
+\t<script>
+\t\tvar slider = tns({
+\t\t    container: '#clientes-carousel',
+\t\t    items: 5,    \t\t
+    \t\tspeed: 1000,
+    \t\tloop: true,
+    \t\tautoplayHoverPause: true,
+    \t\tautoplayButtonOutput: false,
+    \t\tcenter: true,
+    \t\tautoplayTimeout: 7000,
+    \t\tautoplay: true,
+    \t\tcontrols: true,
+    \t\tnav: false,
+    \t\tcontrolsPosition: 'top',
+    \t\tnavPosition: 'bottom',
+    \t\tcontrolsText: ['<i class=\"fas fa-chevron-left\"></i>','<i class=\"fas fa-chevron-right\"></i>'],
+\t\t    responsive: {
+\t\t      300: {
+\t\t\t\titems: 1
+\t\t      },
+\t\t      576: {
+\t\t        items: 1
+\t\t      },
+\t\t      768: {
+\t\t        items: 3
+\t\t      },
+\t\t      992: {
+\t\t        items: 5
+\t\t      }
+\t\t    }
+\t\t});
+\t</script>
 {% endput %}
 
 {% put styles %}

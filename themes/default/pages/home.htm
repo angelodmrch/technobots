@@ -6,17 +6,74 @@ id = home
 [banners]
 area = "home"
 
+[conteudos]
+
 ==
 <?php
 function onStart(){
-
+	$this['conteudo'] = $this->conteudos->getAll();
 }
 ?>
 ==
+
 {% component 'banners' %}
 
-{% put scripts %}
+<div id="clientes">
+	<div class="container">
 
+		<h1>Clientes</h1>
+
+		<div class="carousel-box">
+
+			<div id="clientes-carousel">
+
+				{% for c in conteudo.clientes %}
+					<div class="item">
+						<div class="box">
+							<img src="{{ c.getPath() }}" alt="{{ c.title }}">
+						</div>
+					</div>
+				{% endfor %}
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+{% put scripts %}		
+	<script>
+		var slider = tns({
+		    container: '#clientes-carousel',
+		    items: 5,    		
+    		speed: 1000,
+    		loop: true,
+    		autoplayHoverPause: true,
+    		autoplayButtonOutput: false,
+    		center: true,
+    		autoplayTimeout: 7000,
+    		autoplay: true,
+    		controls: true,
+    		nav: false,
+    		controlsPosition: 'top',
+    		navPosition: 'bottom',
+    		controlsText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+		    responsive: {
+		      300: {
+				items: 1
+		      },
+		      576: {
+		        items: 1
+		      },
+		      768: {
+		        items: 3
+		      },
+		      992: {
+		        items: 5
+		      }
+		    }
+		});
+	</script>
 {% endput %}
 
 {% put styles %}
