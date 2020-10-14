@@ -38,14 +38,27 @@
 .btn-primary {
          margin-top: 10px;
          padding: 0%;
-         text-decoration: none;
+         text-decoration:white;
          text-align:center;
          display: block;
-         border-radius:30px;
-         border:none;
+         border-radius:50px;
+         border:0px;
          width: 30x;
          height: 30px;
          background-color: $color-green !important;
+         border-color: white;
+
+
+
+
+    }
+
+    .btn-primary:hover{
+
+
+    background-color:$color-orange  !important;
+
+
 
 
     }

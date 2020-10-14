@@ -22,7 +22,6 @@
   'Dmrch\\Contact\\Models\\ContactsExport' => 'plugins\\dmrch\\contact\\models\\ContactsExport.php',
   'backend\\Controllers\\accesslogs' => 'modules\\backend\\controllers\\accesslogs.php',
   'Dmrch\\Contact\\Components\\Form' => 'plugins\\dmrch\\contact\\components\\Form.php',
-
   'Dmrch\\Contact\\Models\\Form' => 'plugins\\dmrch\\contact\\models\\Form.php',
   'dmrch\\catalog\\Controllers\\product' => 'plugins\\dmrch\\catalog\\controllers\\product.php',
   'Dmrch\\Catalog\\Models\\Product' => 'plugins\\dmrch\\catalog\\models\\Product.php',
@@ -32,4 +31,7 @@
   'Dmrch\\Catalog\\Components\\Product' => 'plugins\\dmrch\\catalog\\components\\Product.php',
   'Dmrch\\Catalog\\Models\\Category' => 'plugins\\dmrch\\catalog\\models\\Category.php',
   'dmrch\\catalog\\Controllers\\category' => 'plugins\\dmrch\\catalog\\controllers\\category.php',
+  'dmrch\\contact\\Controllers\\newsletter' => 'plugins\\dmrch\\contact\\controllers\\newsletter.php',
+  'Dmrch\\Contact\\Models\\NewsletterExport' => 'plugins\\dmrch\\contact\\models\\NewsletterExport.php',
+  'Dmrch\\Contact\\Models\\Newsletter' => 'plugins\\dmrch\\contact\\models\\Newsletter.php',
 );
