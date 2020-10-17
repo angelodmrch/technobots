@@ -39,16 +39,25 @@
 
 margin-top: auto;
 padding: 5px;     
+height: 150px;
+width: 150px;
 
 
 }
 
 label{
 
-margin-top: 10px;
+height: 5px; 
+margin-top :5px;
 padding : 5px;
 text-decoration: solid;
 color : $color-orange !important;;
+
+}
+
+textarea {
+
+    height: 100px !important;
 
 }
 
