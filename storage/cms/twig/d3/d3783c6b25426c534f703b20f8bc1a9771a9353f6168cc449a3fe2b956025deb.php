@@ -29,8 +29,8 @@ class __TwigTemplate_74ec6b41bffb61db8304e49e62ccc946b8a982731c3870d2d7c59d39695
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("component" => 10, "put" => 25);
-        $filters = array("theme" => 26);
+        $tags = array("component" => 10, "put" => 23);
+        $filters = array("theme" => 39);
         $functions = array();
 
         try {
@@ -87,21 +87,35 @@ class __TwigTemplate_74ec6b41bffb61db8304e49e62ccc946b8a982731c3870d2d7c59d39695
 
 </div>
 
-
-
 ";
-        // line 25
+        // line 23
+        echo $this->env->getExtension('Cms\Twig\Extension')->startBlock('scripts'        );
+        echo "\t\t
+\t<script>
+\t\tvar SPMaskBehavior = function (val) {
+\t      return val.replace(/\\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+\t    },
+\t    spOptions = {
+\t      onKeyPress: function(val, e, field, options) {
+\t          field.mask(SPMaskBehavior.apply({}, arguments), options);
+\t        }
+\t    };
+
+\t    \$('#phone').mask(SPMaskBehavior, spOptions);
+\t</script>
+";
+        echo $this->env->getExtension('Cms\Twig\Extension')->endBlock(true        );
+        // line 37
+        echo "
+";
+        // line 38
         echo $this->env->getExtension('Cms\Twig\Extension')->startBlock('styles'        );
-        // line 26
+        // line 39
         echo "\t<link href=\"";
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "assets/css/main.min.css"]);
-        echo "\" rel=\"stylesheet\">
-\t<link href=\"";
-        // line 27
         echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "assets/sass/page.contato.scss"]);
         echo "\" rel=\"stylesheet\">
 ";
-        // line 25
+        // line 38
         echo $this->env->getExtension('Cms\Twig\Extension')->endBlock(true        );
     }
 
@@ -117,7 +131,7 @@ class __TwigTemplate_74ec6b41bffb61db8304e49e62ccc946b8a982731c3870d2d7c59d39695
 
     public function getDebugInfo()
     {
-        return array (  105 => 25,  101 => 27,  96 => 26,  94 => 25,  78 => 11,  73 => 10,  62 => 1,);
+        return array (  119 => 38,  114 => 39,  112 => 38,  109 => 37,  92 => 23,  78 => 11,  73 => 10,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -144,10 +158,22 @@ class __TwigTemplate_74ec6b41bffb61db8304e49e62ccc946b8a982731c3870d2d7c59d39695
 
 </div>
 
+{% put scripts %}\t\t
+\t<script>
+\t\tvar SPMaskBehavior = function (val) {
+\t      return val.replace(/\\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+\t    },
+\t    spOptions = {
+\t      onKeyPress: function(val, e, field, options) {
+\t          field.mask(SPMaskBehavior.apply({}, arguments), options);
+\t        }
+\t    };
 
+\t    \$('#phone').mask(SPMaskBehavior, spOptions);
+\t</script>
+{% endput %}
 
 {% put styles %}
-\t<link href=\"{{ ['assets/css/main.min.css']|theme }}\" rel=\"stylesheet\">
 \t<link href=\"{{ ['assets/sass/page.contato.scss']|theme }}\" rel=\"stylesheet\">
 {% endput %}", "C:\\wamp64\\www\\technobots/themes/default/pages/contato.htm", "");
     }
