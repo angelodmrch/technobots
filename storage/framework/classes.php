@@ -29,4 +29,7 @@
   'Dmrch\\Contact\\Models\\Newsletter' => 'plugins\\dmrch\\contact\\models\\Newsletter.php',
   'system\\Controllers\\mailtemplates' => 'modules\\system\\controllers\\mailtemplates.php',
   'system\\Controllers\\mailbrandsettings' => 'modules\\system\\controllers\\mailbrandsettings.php',
+  'Dmrch\\Contact\\Components\\Newsletter' => 'plugins\\dmrch\\contact\\components\\Newsletter.php',
+  'system\\Controllers\\updates' => 'modules\\system\\controllers\\updates.php',
+  'cms\\Controllers\\themes' => 'modules\\cms\\controllers\\themes.php',
 );

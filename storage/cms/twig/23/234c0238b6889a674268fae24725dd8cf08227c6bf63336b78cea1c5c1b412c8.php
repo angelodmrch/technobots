@@ -70,8 +70,8 @@ class __TwigTemplate_10538fd15826f88b8a2bbe21b5f57721457923f9ab0f46fc11b5220bfaf
         echo ">Home</a></li>\t
 \t<li><a href=\"";
         // line 3
-        echo url("quem-somos");
-        echo "\" ";
+        echo url("/");
+        echo "#quem-somos\" ";
         if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 3), "id", [], "any", false, false, true, 3) == "quem-somos")) {
             echo "class=\"active\"";
         }
@@ -114,7 +114,7 @@ class __TwigTemplate_10538fd15826f88b8a2bbe21b5f57721457923f9ab0f46fc11b5220bfaf
     {
         return new Source("<ul>
 \t<li><a href=\"{{ url('/') }}\" {% if this.page.id == \"home\" %}class=\"active\"{% endif %}>Home</a></li>\t
-\t<li><a href=\"{{ url('quem-somos') }}\" {% if this.page.id == \"quem-somos\" %}class=\"active\"{% endif %}>Quem Somos</a></li>\t
+\t<li><a href=\"{{ url('/') }}#quem-somos\" {% if this.page.id == \"quem-somos\" %}class=\"active\"{% endif %}>Quem Somos</a></li>\t
 \t<li><a href=\"{{ url('produtos') }}\" {% if this.page.id == \"produtos\" %}class=\"active\"{% endif %}>Produtos</a></li>
 \t<li><a href=\"{{ url('contato') }}\" {% if this.page.id == \"contato\" %}class=\"active\"{% endif %}>Contato</a></li>
 </ul>", "C:\\xampp\\htdocs\\technobots/themes/default/partials/layout/menu.htm", "");
