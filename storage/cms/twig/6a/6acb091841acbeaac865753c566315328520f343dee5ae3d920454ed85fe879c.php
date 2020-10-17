@@ -29,7 +29,7 @@ class __TwigTemplate_6348f04b50891dd42bd5ebbc932f0ab691ed3eaafbee5ede92c36684169
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("placeholder" => 13, "styles" => 16, "partial" => 45, "page" => 50, "framework" => 70, "scripts" => 72);
+        $tags = array("placeholder" => 13, "styles" => 16, "partial" => 45, "page" => 50, "framework" => 71, "scripts" => 73);
         $filters = array("escape" => 5, "theme" => 15);
         $functions = array();
 
@@ -63,7 +63,7 @@ class __TwigTemplate_6348f04b50891dd42bd5ebbc932f0ab691ed3eaafbee5ede92c36684169
 <html lang=\"pt\">
     <head>
         <meta charset=\"UTF-8\">
-        <title>";
+        <title>Technobots | ";
         // line 5
         echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 5), "title", [], "any", false, false, true, 5), 5, $this->source), "html", null, true);
         echo "</title>
@@ -152,8 +152,8 @@ class __TwigTemplate_6348f04b50891dd42bd5ebbc932f0ab691ed3eaafbee5ede92c36684169
         <!-- Scripts -->
         <script src=\"";
         // line 59
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "bower_components/jquery/dist/jquery.js", 1 => "bower_components/sidr/dist/jquery.sidr.min.js", 2 => "bower_components/bootstrap/dist/js/bootstrap.min.js", 3 => "bower_components/tiny-slider/dist/min/tiny-slider.js", 4 => "bower_components/fancybox/dist/jquery.fancybox.min.js"]);
-        // line 63
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "bower_components/jquery/dist/jquery.js", 1 => "bower_components/sidr/dist/jquery.sidr.min.js", 2 => "bower_components/bootstrap/dist/js/bootstrap.min.js", 3 => "bower_components/tiny-slider/dist/min/tiny-slider.js", 4 => "bower_components/fancybox/dist/jquery.fancybox.min.js", 5 => "bower_components/jquery-mask-plugin/dist/jquery.mask.min.js"]);
+        // line 64
         echo "\">
         </script>
         
@@ -162,7 +162,7 @@ class __TwigTemplate_6348f04b50891dd42bd5ebbc932f0ab691ed3eaafbee5ede92c36684169
         </script>
            
         ";
-        // line 70
+        // line 71
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
@@ -173,21 +173,21 @@ class __TwigTemplate_6348f04b50891dd42bd5ebbc932f0ab691ed3eaafbee5ede92c36684169
         }
         echo '<link rel="stylesheet" property="stylesheet" href="' . Request::getBasePath() .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 71
+        // line 72
         echo "
         ";
-        // line 72
+        // line 73
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 73
+        // line 74
         echo "
         ";
-        // line 74
+        // line 75
         $context['__placeholder_footer_default_contents'] = null;        echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('footer', $context['__placeholder_footer_default_contents']);
-        unset($context['__placeholder_footer_default_contents']);        // line 75
+        unset($context['__placeholder_footer_default_contents']);        // line 76
         echo "
         <a href=\"https://api.whatsapp.com/send?phone=5547992192045\" target=\"_blank\" class=\"whatsapp\"><img src=\"";
-        // line 76
+        // line 77
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/whatsapp-logo.png");
         echo "\" alt=\"Whatsapp\"></a>
 
@@ -207,7 +207,7 @@ class __TwigTemplate_6348f04b50891dd42bd5ebbc932f0ab691ed3eaafbee5ede92c36684169
 
     public function getDebugInfo()
     {
-        return array (  191 => 76,  188 => 75,  186 => 74,  183 => 73,  180 => 72,  177 => 71,  166 => 70,  157 => 63,  155 => 59,  150 => 56,  146 => 55,  140 => 51,  138 => 50,  132 => 46,  128 => 45,  114 => 33,  103 => 23,  100 => 17,  97 => 16,  93 => 15,  90 => 14,  88 => 13,  80 => 8,  76 => 7,  72 => 6,  68 => 5,  62 => 1,);
+        return array (  191 => 77,  188 => 76,  186 => 75,  183 => 74,  180 => 73,  177 => 72,  166 => 71,  157 => 64,  155 => 59,  150 => 56,  146 => 55,  140 => 51,  138 => 50,  132 => 46,  128 => 45,  114 => 33,  103 => 23,  100 => 17,  97 => 16,  93 => 15,  90 => 14,  88 => 13,  80 => 8,  76 => 7,  72 => 6,  68 => 5,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -216,7 +216,7 @@ class __TwigTemplate_6348f04b50891dd42bd5ebbc932f0ab691ed3eaafbee5ede92c36684169
 <html lang=\"pt\">
     <head>
         <meta charset=\"UTF-8\">
-        <title>{{ this.page.title }}</title>
+        <title>Technobots | {{ this.page.title }}</title>
         <meta name=\"description\" content=\"{{ this.page.meta_description }}\" />
         <meta name=\"title\" content=\"{{ this.page.meta_title }}\" />
         <meta name=\"keywords\" content=\"{{ this.page.meta_key }}\" />
@@ -274,7 +274,8 @@ class __TwigTemplate_6348f04b50891dd42bd5ebbc932f0ab691ed3eaafbee5ede92c36684169
         'bower_components/sidr/dist/jquery.sidr.min.js',
         'bower_components/bootstrap/dist/js/bootstrap.min.js',
         'bower_components/tiny-slider/dist/min/tiny-slider.js',
-        'bower_components/fancybox/dist/jquery.fancybox.min.js']|theme }}\">
+        'bower_components/fancybox/dist/jquery.fancybox.min.js',
+        'bower_components/jquery-mask-plugin/dist/jquery.mask.min.js']|theme }}\">
         </script>
         
         <script>                    
