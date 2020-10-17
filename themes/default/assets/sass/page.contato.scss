@@ -35,30 +35,35 @@
 	
 }
 
-.btn-primary {
-         margin-top: 10px;
-         padding: 0%;
-         text-decoration:white;
-         text-align:center;
-         display: block;
-         border-radius:50px;
-         border:0px;
-         width: 30x;
-         height: 30px;
-         background-color: $color-green !important;
-         border-color: white;
+.form-control{
+
+margin-top: auto;
+padding: 5px;     
 
 
+}
+
+label{
+
+margin-top: 10px;
+padding : 5px;
+text-decoration: solid;
+color : $color-orange !important;;
+
+}
+
+.btn-primary{
+
+margin-top: 8px;
+
+border-radius: 0%;
+
+}
+
+.btn-primary:hover{
 
 
-    }
-
-    .btn-primary:hover{
+background-color: $color-orange !important;;
 
 
-    background-color:$color-orange  !important;
-
-
-
-
-    }
+}

@@ -29,7 +29,7 @@ class __TwigTemplate_6348f04b50891dd42bd5ebbc932f0ab691ed3eaafbee5ede92c36684169
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("placeholder" => 13, "styles" => 16, "partial" => 44, "page" => 49, "framework" => 68, "scripts" => 70);
+        $tags = array("placeholder" => 13, "styles" => 16, "partial" => 45, "page" => 50, "framework" => 70, "scripts" => 72);
         $filters = array("escape" => 5, "theme" => 15);
         $functions = array();
 
@@ -98,8 +98,8 @@ class __TwigTemplate_6348f04b50891dd42bd5ebbc932f0ab691ed3eaafbee5ede92c36684169
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
         // line 17
         echo "        <link href=\"";
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "assets/css/bootstrap.min.css", 1 => "assets/css/main.min.css", 2 => "bower_components/sidr/dist/stylesheets/jquery.sidr.light.css", 3 => "bower_components/tiny-slider/dist/tiny-slider.css"]);
-        // line 22
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "assets/css/bootstrap.min.css", 1 => "assets/css/main.min.css", 2 => "bower_components/sidr/dist/stylesheets/jquery.sidr.light.css", 3 => "bower_components/tiny-slider/dist/tiny-slider.css", 4 => "bower_components/fancybox/dist/jquery.fancybox.min.css"]);
+        // line 23
         echo "\" rel=\"stylesheet\" /> 
 
         <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.6.1/css/all.css\" integrity=\"sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP\" crossorigin=\"anonymous\">
@@ -110,7 +110,7 @@ class __TwigTemplate_6348f04b50891dd42bd5ebbc932f0ab691ed3eaafbee5ede92c36684169
     <body>
 
         ";
-        // line 32
+        // line 33
         echo "        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-180299558-1\"></script>
         <script>
@@ -124,36 +124,36 @@ class __TwigTemplate_6348f04b50891dd42bd5ebbc932f0ab691ed3eaafbee5ede92c36684169
         <!-- Header -->
         <header id=\"layout-header\">
             ";
-        // line 44
+        // line 45
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("layout/header"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 45
+        // line 46
         echo "        </header>
 
         <!-- Content -->
         <div id=\"layout-content\">
             ";
-        // line 49
-        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
         // line 50
+        echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
+        // line 51
         echo "        </div>
 
         <!-- Footer -->
         <footer id=\"layout-footer\">
             ";
-        // line 54
+        // line 55
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("layout/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 55
+        // line 56
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 58
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "bower_components/jquery/dist/jquery.js", 1 => "bower_components/sidr/dist/jquery.sidr.min.js", 2 => "bower_components/bootstrap/dist/js/bootstrap.min.js", 3 => "bower_components/tiny-slider/dist/min/tiny-slider.js"]);
-        // line 61
+        // line 59
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "bower_components/jquery/dist/jquery.js", 1 => "bower_components/sidr/dist/jquery.sidr.min.js", 2 => "bower_components/bootstrap/dist/js/bootstrap.min.js", 3 => "bower_components/tiny-slider/dist/min/tiny-slider.js", 4 => "bower_components/fancybox/dist/jquery.fancybox.min.js"]);
+        // line 63
         echo "\">
         </script>
         
@@ -162,7 +162,7 @@ class __TwigTemplate_6348f04b50891dd42bd5ebbc932f0ab691ed3eaafbee5ede92c36684169
         </script>
            
         ";
-        // line 68
+        // line 70
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
@@ -173,21 +173,21 @@ class __TwigTemplate_6348f04b50891dd42bd5ebbc932f0ab691ed3eaafbee5ede92c36684169
         }
         echo '<link rel="stylesheet" property="stylesheet" href="' . Request::getBasePath() .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 69
-        echo "
-        ";
-        // line 70
-        echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
-        echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
         // line 71
         echo "
         ";
         // line 72
+        echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
+        echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
+        // line 73
+        echo "
+        ";
+        // line 74
         $context['__placeholder_footer_default_contents'] = null;        echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('footer', $context['__placeholder_footer_default_contents']);
-        unset($context['__placeholder_footer_default_contents']);        // line 73
+        unset($context['__placeholder_footer_default_contents']);        // line 75
         echo "
         <a href=\"https://api.whatsapp.com/send?phone=5547992192045\" target=\"_blank\" class=\"whatsapp\"><img src=\"";
-        // line 74
+        // line 76
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/whatsapp-logo.png");
         echo "\" alt=\"Whatsapp\"></a>
 
@@ -207,7 +207,7 @@ class __TwigTemplate_6348f04b50891dd42bd5ebbc932f0ab691ed3eaafbee5ede92c36684169
 
     public function getDebugInfo()
     {
-        return array (  191 => 74,  188 => 73,  186 => 72,  183 => 71,  180 => 70,  177 => 69,  166 => 68,  157 => 61,  155 => 58,  150 => 55,  146 => 54,  140 => 50,  138 => 49,  132 => 45,  128 => 44,  114 => 32,  103 => 22,  100 => 17,  97 => 16,  93 => 15,  90 => 14,  88 => 13,  80 => 8,  76 => 7,  72 => 6,  68 => 5,  62 => 1,);
+        return array (  191 => 76,  188 => 75,  186 => 74,  183 => 73,  180 => 72,  177 => 71,  166 => 70,  157 => 63,  155 => 59,  150 => 56,  146 => 55,  140 => 51,  138 => 50,  132 => 46,  128 => 45,  114 => 33,  103 => 23,  100 => 17,  97 => 16,  93 => 15,  90 => 14,  88 => 13,  80 => 8,  76 => 7,  72 => 6,  68 => 5,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -233,6 +233,7 @@ class __TwigTemplate_6348f04b50891dd42bd5ebbc932f0ab691ed3eaafbee5ede92c36684169
             'assets/css/main.min.css',
             'bower_components/sidr/dist/stylesheets/jquery.sidr.light.css',
             'bower_components/tiny-slider/dist/tiny-slider.css',
+            'bower_components/fancybox/dist/jquery.fancybox.min.css'
         ]|theme }}\" rel=\"stylesheet\" /> 
 
         <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.6.1/css/all.css\" integrity=\"sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP\" crossorigin=\"anonymous\">
@@ -272,7 +273,8 @@ class __TwigTemplate_6348f04b50891dd42bd5ebbc932f0ab691ed3eaafbee5ede92c36684169
         <script src=\"{{ ['bower_components/jquery/dist/jquery.js',
         'bower_components/sidr/dist/jquery.sidr.min.js',
         'bower_components/bootstrap/dist/js/bootstrap.min.js',
-        'bower_components/tiny-slider/dist/min/tiny-slider.js']|theme }}\">
+        'bower_components/tiny-slider/dist/min/tiny-slider.js',
+        'bower_components/fancybox/dist/jquery.fancybox.min.js']|theme }}\">
         </script>
         
         <script>                    

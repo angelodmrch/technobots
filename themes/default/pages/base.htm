@@ -3,10 +3,12 @@ url = "/quem-somos"
 layout = "default"
 id = quem-somos
 
+[conteudos]
+
 ==
 <?php
 function onStart(){
-
+	$this['conteudo'] = $this->conteudos->getAll();
 }
 ?>
 ==
@@ -17,15 +19,12 @@ function onStart(){
 	</div>
 </section>
 
-
 <section id="empresa">
 	<div class="container">
-
+		{{ conteudo.texto|raw }}
 	</div>
 </section>
-
 
 {% put styles %}
 	<link href="{{ ['assets/css/page.home.min.css']|theme }}" rel="stylesheet">
 {% endput %}
-

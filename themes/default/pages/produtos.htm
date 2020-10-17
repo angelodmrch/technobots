@@ -14,7 +14,6 @@ function onStart(){
 ?>
 ==
 
-
 <section id="page-header">
 	<div class="container">
 		<h1>Produtos</h1>	
@@ -27,10 +26,17 @@ function onStart(){
 		<div class="row">
 			{% for p in products.getAll() %}
 				<div class="col-lg-4 item">
-					<div class="img">
-						<img src="{{ p.thumb.getPath() }}" alt="{{ p.name }}">
-					</div>
+					
+					<a href="javascript:;" data-fancybox-trigger="gallery-{{ p.id }}" class="img"><img src="{{ p.thumb.getPath() }}" alt="{{ p.name }}"></a>
 
+					{% for v in p.videos %}
+						<a href="{{ v.link }}" data-fancybox="gallery-{{ p.id }}"></a>
+					{% endfor %}
+
+					{% for g in p.gallery %}
+						<a href="{{ g.getPath() }}" data-fancybox="gallery-{{ p.id }}" data-caption="{{ g.title }}"></a>
+					{% endfor %}
+					
 					<div class="text">
 
 						<h2>{{ p.name }}</h2>
@@ -39,7 +45,7 @@ function onStart(){
 
 						<br>
 
-						<a href="" class="btn btn-primary">ORÇAMENTO</a>
+						<a href="{{ url('contato') }}" class="btn btn-primary">ORÇAMENTO</a>
 
 					</div>
 				</div>

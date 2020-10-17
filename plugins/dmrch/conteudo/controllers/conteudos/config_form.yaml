@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Conteudo
+
+# Model Form Field configuration
+form: $/dmrch/conteudo/models/conteudos/fields.yaml
+
+# Model Class name
+modelClass: Dmrch\Conteudo\Models\Conteudos
+
+# Default redirect location
+defaultRedirect: dmrch/conteudo/conteudos
+
+# Create page
+create:
+    title: Create Conteudo
+    redirect: dmrch/conteudo/conteudos/update/:id
+    redirectClose: dmrch/conteudo/conteudos
+
+# Update page
+update:
+    title: Edit Conteudo
+    redirect: dmrch/conteudo/conteudos
+    redirectClose: dmrch/conteudo/conteudos
+
+# Preview page
+preview:
+    title: Preview Conteudo
