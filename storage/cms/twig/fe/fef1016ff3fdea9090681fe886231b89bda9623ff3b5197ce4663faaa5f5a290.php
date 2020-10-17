@@ -29,14 +29,14 @@ class __TwigTemplate_31a9bf4d6647d1b164665db73f8e35ab63bab328d21953d55cde3499bca
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("component" => 1, "for" => 12, "put" => 26);
-        $filters = array("escape" => 15, "theme" => 62);
+        $tags = array("component" => 1, "for" => 20, "put" => 34);
+        $filters = array("raw" => 7, "escape" => 23, "theme" => 70);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
                 ['component', 'for', 'put'],
-                ['escape', 'theme'],
+                ['raw', 'escape', 'theme'],
                 []
             );
         } catch (SecurityError $e) {
@@ -64,6 +64,17 @@ class __TwigTemplate_31a9bf4d6647d1b164665db73f8e35ab63bab328d21953d55cde3499bca
         unset($context['__cms_component_params']);
         // line 2
         echo "
+<section id=\"quem-somos\">
+\t<div class=\"container\">
+\t\t<h1>Quem Somos</h1>\t
+
+\t\t";
+        // line 7
+        echo $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["conteudo"] ?? null), "texto", [], "any", false, false, true, 7), 7, $this->source);
+        echo "
+\t</div>
+</section>
+
 <div id=\"clientes\">
 \t<div class=\"container\">
 
@@ -74,18 +85,18 @@ class __TwigTemplate_31a9bf4d6647d1b164665db73f8e35ab63bab328d21953d55cde3499bca
 \t\t\t<div id=\"clientes-carousel\">
 
 \t\t\t\t";
-        // line 12
+        // line 20
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["conteudo"] ?? null), "clientes", [], "any", false, false, true, 12));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["conteudo"] ?? null), "clientes", [], "any", false, false, true, 20));
         foreach ($context['_seq'] as $context["_key"] => $context["c"]) {
-            // line 13
+            // line 21
             echo "\t\t\t\t\t<div class=\"item\">
 \t\t\t\t\t\t<div class=\"box\">
 \t\t\t\t\t\t\t<img src=\"";
-            // line 15
-            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["c"], "getPath", [], "method", false, false, true, 15), 15, $this->source), "html", null, true);
+            // line 23
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["c"], "getPath", [], "method", false, false, true, 23), 23, $this->source), "html", null, true);
             echo "\" alt=\"";
-            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["c"], "title", [], "any", false, false, true, 15), 15, $this->source), "html", null, true);
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["c"], "title", [], "any", false, false, true, 23), 23, $this->source), "html", null, true);
             echo "\">
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
@@ -94,7 +105,7 @@ class __TwigTemplate_31a9bf4d6647d1b164665db73f8e35ab63bab328d21953d55cde3499bca
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['c'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 19
+        // line 27
         echo "
 \t\t\t</div>
 
@@ -103,7 +114,7 @@ class __TwigTemplate_31a9bf4d6647d1b164665db73f8e35ab63bab328d21953d55cde3499bca
 </div>
 
 ";
-        // line 26
+        // line 34
         echo $this->env->getExtension('Cms\Twig\Extension')->startBlock('scripts'        );
         echo "\t\t
 \t<script>
@@ -140,17 +151,17 @@ class __TwigTemplate_31a9bf4d6647d1b164665db73f8e35ab63bab328d21953d55cde3499bca
 \t</script>
 ";
         echo $this->env->getExtension('Cms\Twig\Extension')->endBlock(true        );
-        // line 60
+        // line 68
         echo "
 ";
-        // line 61
+        // line 69
         echo $this->env->getExtension('Cms\Twig\Extension')->startBlock('styles'        );
-        // line 62
+        // line 70
         echo "\t<link href=\"";
         echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "assets/css/page.home.min.css"]);
         echo "\" rel=\"stylesheet\">
 ";
-        // line 61
+        // line 69
         echo $this->env->getExtension('Cms\Twig\Extension')->endBlock(true        );
     }
 
@@ -166,12 +177,20 @@ class __TwigTemplate_31a9bf4d6647d1b164665db73f8e35ab63bab328d21953d55cde3499bca
 
     public function getDebugInfo()
     {
-        return array (  154 => 61,  149 => 62,  147 => 61,  144 => 60,  107 => 26,  98 => 19,  86 => 15,  82 => 13,  78 => 12,  66 => 2,  62 => 1,);
+        return array (  165 => 69,  160 => 70,  158 => 69,  155 => 68,  118 => 34,  109 => 27,  97 => 23,  93 => 21,  89 => 20,  73 => 7,  66 => 2,  62 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% component 'banners' %}
+
+<section id=\"quem-somos\">
+\t<div class=\"container\">
+\t\t<h1>Quem Somos</h1>\t
+
+\t\t{{ conteudo.texto|raw }}
+\t</div>
+</section>
 
 <div id=\"clientes\">
 \t<div class=\"container\">

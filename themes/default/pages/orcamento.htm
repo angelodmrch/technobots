@@ -1,0 +1,33 @@
+title = "Orçamento"
+url = "/orcamento"
+layout = "default"
+id = orcamento
+
+[forms]
+[products]
+
+==
+<?php
+function onStart(){
+
+}
+?>
+==
+<section id="page-header">
+	<div class="container">
+		<div class="h1before"></div>
+		<h1 class="">Orçamento</h1>	
+	</div>
+</section>
+
+<div id="contato">
+    <div class="container">
+        {% component 'forms' code="orcamento" %}
+
+        <br><br>
+    </div>
+</div>
+
+{% put styles %}
+	<link href="{{ ['assets/sass/page.contato.scss']|theme }}" rel="stylesheet">
+{% endput %}
