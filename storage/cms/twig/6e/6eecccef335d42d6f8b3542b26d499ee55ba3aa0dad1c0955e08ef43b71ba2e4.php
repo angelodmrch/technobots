@@ -67,10 +67,7 @@ class __TwigTemplate_d2cd5bf597fb268be320d79138b552a5d4f303a40fc25e6923182ae1629
         // line 5
         echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 5), "title", [], "any", false, false, true, 5), 5, $this->source), "html", null, true);
         echo "</title>
-        <meta name=\"description\" content=\"";
-        // line 6
-        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 6), "meta_description", [], "any", false, false, true, 6), 6, $this->source), "html", null, true);
-        echo "\" />
+        <meta name=\"description\" content=\"A Technobots tem com objetivo de simplificar agilizar e padronizar os processos de fabricação em padarias, redes de supermercados e grandes indústrias do ramo alimentício.\" />
         <meta name=\"title\" content=\"";
         // line 7
         echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 7), "meta_title", [], "any", false, false, true, 7), 7, $this->source), "html", null, true);
@@ -207,7 +204,7 @@ class __TwigTemplate_d2cd5bf597fb268be320d79138b552a5d4f303a40fc25e6923182ae1629
 
     public function getDebugInfo()
     {
-        return array (  191 => 77,  188 => 76,  186 => 75,  183 => 74,  180 => 73,  177 => 72,  166 => 71,  157 => 64,  155 => 59,  150 => 56,  146 => 55,  140 => 51,  138 => 50,  132 => 46,  128 => 45,  114 => 33,  103 => 23,  100 => 17,  97 => 16,  93 => 15,  90 => 14,  88 => 13,  80 => 8,  76 => 7,  72 => 6,  68 => 5,  62 => 1,);
+        return array (  188 => 77,  185 => 76,  183 => 75,  180 => 74,  177 => 73,  174 => 72,  163 => 71,  154 => 64,  152 => 59,  147 => 56,  143 => 55,  137 => 51,  135 => 50,  129 => 46,  125 => 45,  111 => 33,  100 => 23,  97 => 17,  94 => 16,  90 => 15,  87 => 14,  85 => 13,  77 => 8,  73 => 7,  68 => 5,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -217,7 +214,7 @@ class __TwigTemplate_d2cd5bf597fb268be320d79138b552a5d4f303a40fc25e6923182ae1629
     <head>
         <meta charset=\"UTF-8\">
         <title>Technobots | {{ this.page.title }}</title>
-        <meta name=\"description\" content=\"{{ this.page.meta_description }}\" />
+        <meta name=\"description\" content=\"A Technobots tem com objetivo de simplificar agilizar e padronizar os processos de fabricação em padarias, redes de supermercados e grandes indústrias do ramo alimentício.\" />
         <meta name=\"title\" content=\"{{ this.page.meta_title }}\" />
         <meta name=\"keywords\" content=\"{{ this.page.meta_key }}\" />
         <meta name=\"author\" content=\"Technobots\" />

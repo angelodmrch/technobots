@@ -92,12 +92,12 @@ class Plugin extends PluginBase
                         'url'         => Backend::url('dmrch/catalog/product'),
                         'permissions' => ['dmrch.catalog.*'],
                     ], 
-                    'category' => [
-                        'label'       => 'Categorias',
-                        'icon'        => 'icon-cubes',
-                        'url'         => Backend::url('dmrch/catalog/category'), 
-                        'permissions' => ['dmrch.catalog.*'],
-                     ]
+                    // 'category' => [
+                    //     'label'       => 'Categorias',
+                    //     'icon'        => 'icon-cubes',
+                    //     'url'         => Backend::url('dmrch/catalog/category'), 
+                    //     'permissions' => ['dmrch.catalog.*'],
+                    //  ]
                 ]
             ]
         ];
