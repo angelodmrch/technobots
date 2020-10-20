@@ -57,9 +57,19 @@
 .btn-primary {
   background-color: $color-green !important;
   border: none !important;
-  border-radius: 0;
+///  border-radius: 0;
 
   &:hover, &:focus {
     background-color: $color-orange !important;
+  }
+}
+
+.btn-secondary {
+  background-color: $color-orange !important;
+  border: none !important;
+ // border-radius: 10px !important;
+
+  &:hover, &:focus {
+    background-color: $color-green !important;
   }
 }
